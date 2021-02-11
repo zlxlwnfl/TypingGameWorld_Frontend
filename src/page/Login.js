@@ -11,7 +11,7 @@ const Login = () => {
       <h2 className="h2 mb-3 font-weight-normal">LOGIN</h2>
       <div>
         <Form>
-          <Form.Group as={Row} controlId="loginFormUserId">
+          <Form.Group as={Row}>
             <Form.Label column sm="1">
               ID
             </Form.Label>
@@ -19,7 +19,7 @@ const Login = () => {
               <Form.Control type="text" />
             </Col>
           </Form.Group>
-          <Form.Group as={Row} controlId="loginFormUserPassword">
+          <Form.Group as={Row}>
             <Form.Label column sm="1">
               Password
             </Form.Label>
