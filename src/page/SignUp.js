@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 //import { Link } from 'react-router-dom';
 import { Form, Col, Row, Button } from 'react-bootstrap';
 
+import '../css/SignUp.css';
+
 const SignUp = () => {
   const [MemberId, setMemberId] = useState('');
   const [MemberPassword, setMemberPassword] = useState('');
@@ -26,6 +28,11 @@ const SignUp = () => {
   const handleSubmitSingUp = (e) => {
     e.preventDefault();
 
+    if (MemberId == '' || MemberPassword == '') {
+      alert('비어있는 문항을 입력해주세요');
+      return;
+    }
+
     if (!checkPasswordEqual(MemberPassword, MemberPasswordCheck)) {
       alert('비밀번호가 같지 않습니다');
       return;
@@ -45,25 +52,25 @@ const SignUp = () => {
   };
 
   return (
-    <div>
+    <div className="signUp">
       <div>
         <h2 className="h2 mb-3 font-weight-normal">SIGN UP</h2>
       </div>
       <div>
         <Form onSubmit={handleSubmitSingUp}>
           <Form.Group as={Row}>
-            <Form.Label column sm="1">
+            <Form.Label column sm="3">
               ID
             </Form.Label>
-            <Col sm="3">
+            <Col sm="8">
               <Form.Control type="text" onChange={handleChangeFormMemberId} />
             </Col>
           </Form.Group>
           <Form.Group as={Row}>
-            <Form.Label column sm="1">
+            <Form.Label column sm="3">
               Password
             </Form.Label>
-            <Col sm="3">
+            <Col sm="8">
               <Form.Control
                 type="password"
                 onChange={handleChangeFormMemberPassword}
@@ -71,10 +78,10 @@ const SignUp = () => {
             </Col>
           </Form.Group>
           <Form.Group as={Row}>
-            <Form.Label column sm="1">
+            <Form.Label column sm="3">
               Password Check
             </Form.Label>
-            <Col sm="3">
+            <Col sm="8">
               <Form.Control
                 type="password"
                 onChange={handleChangeFormMemberPasswordCheck}
