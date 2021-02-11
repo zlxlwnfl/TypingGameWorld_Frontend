@@ -7,7 +7,7 @@ import '../css/Login.css';
 const Login = () => {
   return (
     <div className="login">
-      <h1 className="h1 mb-3 font-weight-bold">타자 게임 세상</h1>
+      <h1 className="h1 mb-3 font-weight-bold">TypingGameWorld</h1>
       <h2 className="h2 mb-3 font-weight-normal">LOGIN</h2>
       <div>
         <Form>
@@ -29,7 +29,7 @@ const Login = () => {
           </Form.Group>
 
           <Link to="/signUp">
-            <Button variant="primary" type="submit">
+            <Button variant="info" type="submit">
               SIGN UP
             </Button>
           </Link>

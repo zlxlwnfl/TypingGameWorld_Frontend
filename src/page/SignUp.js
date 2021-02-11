@@ -89,7 +89,7 @@ const SignUp = () => {
             </Col>
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button variant="info" type="submit">
             COMPLETE
           </Button>
         </Form>
