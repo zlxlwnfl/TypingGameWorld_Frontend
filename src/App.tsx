@@ -6,7 +6,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import HomePage from './views/HomePage/HomePage';
 import LoginPage from './views/LoginPage/LoginPage';
-import JoinPage from './views/JoinPage/JoinPage'
+import JoinPage from './views/JoinPage/JoinPage';
+import GamePage from './views/GamePage/GamePage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/join" element={<JoinPage />} />
+        <Route path="/games" element={<GamePage />} />
       </Routes>
     </BrowserRouter>
   </ThemeProvider>
