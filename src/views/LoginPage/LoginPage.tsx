@@ -76,7 +76,7 @@ function HomePage() {
                 color="secondary"
                 fullWidth
               >
-                { sent ? 'In progress…' : 'Join'}
+                { sent ? 'In progress…' : 'Login'}
               </FormButton>
             </Box>
           )}
