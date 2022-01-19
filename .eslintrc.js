@@ -2,11 +2,13 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    node: true
+    node: true,
   },
-  parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module'
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
+  extends: ["eslint:recommended", "plugin:react/recommended"],
+  rules: {
+    quotes: ["off", "single"],
+    "linebreak-style": 0,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended']
 };

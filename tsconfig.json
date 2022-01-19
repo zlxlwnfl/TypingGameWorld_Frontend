@@ -1,0 +1,10 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es6",
+        "jsx": "react",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+    }
+}
